@@ -1,0 +1,20 @@
+#!/bin/bash
+rm testfile10
+for i in {1..10} 
+do
+echo "$i" >> testfile10
+done
+
+for j in {1..5}
+do
+cat testfile0 >> testfile10
+cat testfile1 >> testfile10
+cat testfile2 >> testfile10
+cat testfile3 >> testfile10
+cat testfile4 >> testfile10
+cat testfile5 >> testfile10
+cat testfile6 >> testfile10
+cat testfile7 >> testfile10
+cat testfile8 >> testfile10
+cat testfile9 >> testfile10 
+done
