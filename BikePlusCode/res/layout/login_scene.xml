@@ -1,0 +1,166 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:stretchColumns="*"
+    android:id="@+id/tableView">
+    <TextView
+        android:padding="@dimen/activity_horizontal_margin"
+        android:gravity="center_horizontal"
+        android:textSize="42sp"
+        android:text="BikePlus"
+        android:textColor="@color/colorAccent"/>
+    <TableRow>
+        <TextView
+            android:id="@+id/led"
+            android:layout_column="0"
+            android:textSize="@dimen/label_text_size"
+            android:gravity="center_horizontal"
+            android:visibility="invisible"
+            android:text="No Users"/>
+    </TableRow>
+    <TableRow>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create New User"
+            android:textColor="@android:color/white"
+            android:id="@+id/button"
+            android:layout_column="0"
+            android:onClick="createNewUser"
+            android:background="@color/colorPrimaryDark"/>
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:layout_marginTop="@dimen/activity_vertical_large_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="@android:color/white"
+            android:id="@+id/gButton"
+            android:layout_column="0"
+            android:background="@color/colorPrimaryDark"
+            android:onClick="goBiking"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/aButton"
+            android:layout_marginTop="@dimen/activity_vertical_large_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remove User"
+            android:textColor="@android:color/white"
+            android:layout_column="0"
+            android:background="@color/colorPrimaryDark"
+            android:onClick="removeUser"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/removeUsersButton"
+            android:layout_marginTop="@dimen/activity_vertical_large_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remove All Users"
+            android:textColor="@android:color/white"
+            android:layout_column="0"
+            android:background="@color/colorPrimaryDark"
+            android:onClick="removeAllUsers"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/mapActivityButton"
+            android:layout_marginTop="@dimen/activity_vertical_large_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Map"
+            android:textColor="@android:color/white"
+            android:layout_column="0"
+            android:background="@color/colorPrimaryDark"
+            android:onClick="mapActivity"/>
+    </TableRow>
+
+
+</TableLayout>

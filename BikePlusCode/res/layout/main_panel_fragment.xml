@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/four"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp">
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent" android:layout_height="fill_parent"
+            android:background="@drawable/rounded_corner"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/feet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Feet"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:textColor="@color/colorAccent"
+                android:textAppearance="@android:style/TextAppearance.Large"
+
+                 />
+
+            <TextView
+                android:id="@+id/sonar"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_toLeftOf="@+id/feet"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:textColor="@color/colorAccent"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:visibility="visible"/>
+            <TextView
+                android:id="@+id/welcomeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:text=""
+                android:textColor="@color/colorAccent"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/seven"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_below="@+id/five"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent" android:layout_height="fill_parent"
+            android:background="@drawable/rounded_corner">
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lights"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/colorAccent"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:onClick="turnOnLights"
+                android:layout_alignTop="@+id/right"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_alignParentLeft="true"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/colorAccent"
+                android:text="Left"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:onClick="leftSignal"/>
+
+            <Button
+                android:id="@+id/right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/colorAccent"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:text="Right"
+                android:onClick="rightSignal"/>
+
+            <Button
+                android:id="@+id/unlockButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="Lock"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/colorAccent"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:onClick="unLockBike"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/left" />
+
+            <Button
+                android:id="@+id/disconnectButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="Logout"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/colorAccent"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:onClick="disconnetFromBike"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/right" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/five"
+        android:layout_width="match_parent"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_height="165dp"
+        android:layout_below="@+id/four"
+        android:layout_centerHorizontal="true"
+        >
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent" android:layout_height="fill_parent"
+            android:background="@drawable/rounded_corner">
+            <TextView
+                android:id="@+id/centerSpeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="false"
+                android:text="  "
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_alignParentTop="true"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:layout_marginLeft="0dip"
+                android:layout_marginRight="0dip"
+                android:textColor="@color/colorAccent"
+                android:textAlignment="center"/>
+            <TextView
+                android:id="@+id/metric"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MPH"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:layout_marginLeft="0dip"
+                android:layout_marginRight="0dip"
+                android:textColor="@color/colorAccent"
+                android:textAlignment="center"
+                android:layout_alignTop="@+id/centerSpeed"
+                android:layout_toEndOf="@+id/centerSpeed" />
+            <TextView
+                android:id="@+id/speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="false"
+                android:text="--.-- "
+                android:layout_alignParentTop="true"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="0dip"
+                android:layout_marginRight="0dip"
+                android:layout_toLeftOf="@+id/centerSpeed"
+                android:textColor="@color/colorAccent"
+                android:textAlignment="center"/>
+            <TextView
+                android:id="@+id/hr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="---"
+                android:textColor="@color/colorAccent"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:layout_marginLeft="0dip"
+                android:layout_marginRight="0dip"
+                android:textAlignment="center"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/activity_vertical_large_margin"/>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
