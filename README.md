@@ -1,4 +1,2 @@
 # projects
-Miguel Guevara
-Florida International University
-Computer Engineer
+Miguel Guevara / Florida International University / Computer Engineer
